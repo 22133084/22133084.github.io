@@ -3,8 +3,8 @@
 <head>
 <title>Mobile World Station - Homepage</title>
 <style>
-body {font-family:Arial;}
-width: 450px;
+body {font-family:Arial;
+width: 900px;
 margin-right: auto;
 margin-left: auto;}
 h1 {color: #44763E;}
@@ -12,6 +12,24 @@ p {color: #161716;}
 a:link {color: #44763E;}
 a:visited {color: #9C2511;}
 a:hover {color: #089D1B;}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
@@ -28,20 +46,40 @@ a:hover {color: #089D1B;}
 <p>With a wide variety of options from Apple and Samsung, we think you'll find your ideal option.</p>
 
 Please use the following links to explore the website:
-<ul>
-<li><a href="apple.htm">Apple Page</a></li>
-<img src="images/iPhone16.png" width="180" height="195" alt="iPhone16">
-<li><a href="samsung.htm">Samsung Page</a></li>
-<img src="images/s24.jpg" width="195" height="245" alt="Galaxy S24">
-<li><a href="accessories.htm">Accessories Page</a></li>
-<img src="images/magsafe.jpg" alt="Magsafe">
-</ul>
+<div class="row">
+  <div class="column">
+    <h2>Apple Page</h2>
+    <p><a href="apple.htm"><img src="images/iPhone16.png" width="180" height="195" alt="iPhone16"></a></p>
+  </div>
+  <div class="column">
+    <h2>Samsung Page</h2>
+    <p><a href="samsung.htm"><img src="images/S24.jpg" width="195" height="245" alt="Galaxy S24"></a></p>
+  </div>
+  <div class="column">
+    <h2>Accessories Page</h2>
+    <p><a href="accessories.htm"><img src="images/Magsafe.jpg" alt="Magsafe"></a></p>
+  </div>
+</div>
 
 <p>Website produced by: Brandon Clay</p>
 
 
 <ol><a href="https://discussions.apple.com/welcome">Apple Forum</a></ol>
 <ol><a href="https://us.community.samsung.com/t5/Samsung-Community/ct-p/us?page=1&tab=recent_topics">Samsung Forum</a></ol>
+
+<h2>Contact us!</h2>
+<form action="mailto:22133084@cambria.ac.uk" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 </html>
