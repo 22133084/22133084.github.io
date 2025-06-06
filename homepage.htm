@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Level 2 Portfolio - Homepage</title>
+<style>
+body {font-family:Arial;
+width: 900px;
+margin-right: auto;
+margin-left: auto;}
+h1 {color: #44763E;}
+p {color: #161716;}
+a:link {color: #44763E;}
+a:visited {color: #9C2511;}
+a:hover {color: #089D1B;}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<img src="images/banner.png" height="125" width="900" alt="Mobile World Station Banner image">
+<p>
+<a href="homepage.htm">Home</a> •
+<a href="unit1.htm">Unit 1</a> •
+<a href="unit2.htm">Unit 2</a> •
+<a href="unit8.htm">Unit 8</a> • 
+<a href="unit13.htm">Unit 13</a> • 
+<a href="unit19.htm">Unit 19</a> • 
+<a href="unit13text.htm">Unit 13 Text</a> • 
+<a href="unit19text.htm">Unit 19 Text</a> 
+</p>
+<h1>Home</h1>
+
+<p>My name is Brandon Clay, 17 years old and I am a Level 2 Informative and Creative Technology (ICT) student at Coleg Cambria's Deeside site. I joined in September 2024.</p>
+<p>This is my Level 2 ICT Portfolio for Unit 3, which shows the different pieces of work I've done throughout the year.</p>
+
+Please use the following links to explore the units I have decided to include:
+<div class="row">
+  <div class="column">
+    <h2>Unit 8</h2>
+    <p><a href="unit8.htm"><img src="images/u8_cover.jpg" alt="unit8"></a></p>
+  </div>
+  <div class="column">
+    <h2>Unit 13</h2>
+    <p><a href="unit13.htm"><img src="images/u13_cover.jfif" alt="unit13"></a></p>
+  </div>
+  <div class="column">
+    <h2>Unit 19</h2>
+    <p><a href="unit19.htm"><img src="images/u19_cover.png" alt="unit19"></a></p>
+  </div>
+</div>
+
+<h2>Contact me!</h2>
+<form action="mailto:22133084@cambria.ac.uk" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
